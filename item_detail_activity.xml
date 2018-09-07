@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_detail_parent_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/detail_parent_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_detail_tech_images"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/detail_parent_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+
+                android:id="@+id/detail_parent_image_ios"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/detail_parent_title"
+                android:src="@mipmap/apple"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/detail_parent_image_android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/android"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/detail_parent_image_angular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/angular"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/detail_parent_image_hybrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gm"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/detail_parent_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/down_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_detail_child_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@id/rl_detail_parent_layout"
+        android:background="@color/white"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_detail_child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_detail_child"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:src="@mipmap/video" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
